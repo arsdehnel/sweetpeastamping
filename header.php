@@ -82,7 +82,7 @@
   </nav>
   <?php
     $cur_id = get_the_id();
-    $items = wp_get_nav_menu_items( 'main' );
+    $items = wp_get_nav_menu_items( 'primary' );
     if( is_array( $items ) && count( $items ) ):
       echo '<nav class="nav-main">';
       foreach( $items as $item ):
