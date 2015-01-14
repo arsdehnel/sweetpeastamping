@@ -24,7 +24,7 @@
 
 <body <?php body_class(); ?>>
 <header id="site-header" class="site-header large">
-  <h1><img src="http://static.tumblr.com/4587e450727ed912d1e81867cd656810/9qo96br/Q85mqi9a0/tumblr_static_sweetpeastamping_horizontal.gif" alt="Sweetpea Stamping"></h1>
+  <h1>Sweetpea Stamping</h1>
   <h2>Creativity Without Limits</h2>
   <?php
 

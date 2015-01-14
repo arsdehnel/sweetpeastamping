@@ -30,6 +30,9 @@ body {
   border-width: 0 8px 8px 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
+.site-header h1 {
+  background: transparent url(img/logo-large.png) no-repeat 50% 50%;
+}
 .site-header h2 {
   position: absolute;
   right: 40px;
