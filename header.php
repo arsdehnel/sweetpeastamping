@@ -121,6 +121,8 @@
       endif;
 
       echo '</nav><!-- /.nav-main -->';
+    else:
+        print_r( wp_get_nav_menu_items( 'primary' ) );
     endif;
   ?>
 </header>
