@@ -1,0 +1,24 @@
+/*!
+Theme Name: Sweetpea Stamping 2014
+Theme URI: http://arsdehnel.net/themes/sweetpea2014/
+Author: Adam Dehnel
+Author URI: http://arsdehnel.net/
+Description: A custom theme designed specifically for this site
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import "partials/mixins";
+@import "partials/variables";
+
+@import "partials/layout";
+@import "partials/header";
+@import "partials/footer";
+@import "partials/main";
+
+@import "partials/articles";
+
+@import "partials/nav";
+@import "partials/sidebar";
+@import "partials/stars";

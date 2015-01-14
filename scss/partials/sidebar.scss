@@ -1,0 +1,31 @@
+.sidebar {
+    width: 28%;
+    width: calc( 30% - 10px );
+    min-height: 500px;
+    float: left;
+    margin: 0 0 0 10px;
+    background: rgba( 0, 0, 0, .05 );
+    ul {
+        margin: 0 0 0 10px;
+        padding: 0;
+        ul {
+            margin-left: 2em;
+            li {
+                margin-bottom: .5em;
+            }
+        }
+    }
+    h2 {
+        margin: 0 0 .5em;
+        color: $blue;
+    }
+    a {
+        color: $red;
+        text-decoration: none;
+        background: linear-gradient(to bottom, rgba(0,0,0,0) 95%, rgba($red,0.6) 95%);
+        background-position: 0 0;
+        &:hover {
+            background: none;
+        }
+    }
+}

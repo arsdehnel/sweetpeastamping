@@ -1,0 +1,221 @@
+%red-nav {
+  position: relative;
+  width: 1000px;
+  background: $red;
+  left: -20px;
+  display: block;
+  &:after,
+  &:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -12px;
+    border: 6px solid;
+  }
+  &:before{
+    left: 0;
+    border-color: transparent mix( black, $red, 40% ) mix( black, $red, 40% ) transparent;
+  }
+  &:after{
+    right: 0;
+    border-color: transparent transparent mix( black, $red, 40% ) mix( black, $red, 40% );
+  }
+}
+
+.nav-main{
+  @extend %red-nav;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  text-align: center;
+  // .search-open & {
+    &:after,
+    &:before {
+      display: none;
+    }
+  // }
+  .nav-item{
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 200px;
+    line-height: 80px;
+    height: 80px;
+    margin: 0 .2em;
+    color: #666;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    .text,
+    svg {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+    }
+    svg {
+      z-index: 5;
+      .shape-outer{
+        stroke: $bg-shape-color;
+        stroke-width: 2;
+        fill: none;
+      }
+      .shape-inner{
+        stroke-width: 0;
+        fill: $bg-shape-color;
+      }
+    }
+    &:hover {
+      color: white;
+      .shape-inner {
+        fill: rgba( white, .5 );
+      }
+      .shape-outer {
+        fill: none !important;
+      }
+    }
+    &.active {
+      color: #333;
+      .shape-inner {
+        fill: white;
+      }
+      .shape-outer {
+        fill: $blue;
+      }
+    }
+    span {
+      z-index: 10;
+    }
+    ul {
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      display: none;
+      margin: 0;
+      padding: 14px 0 0;
+      background: $red;
+      list-style: none;
+      line-height: 2;
+      a {
+        border-top: 1px solid white;
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        &:hover {
+          background: rgba( white, .2 );
+        }
+      }
+    }
+    &:hover ul {
+      display: block;
+    }
+  }
+}
+.nav-connect {
+  position: absolute;
+  right: 20px;
+  bottom: 114px;
+  text-align: right;
+  transition: .4s linear bottom;
+  .search-open & {
+    bottom: 154px;
+  }
+  a{
+    position: relative;
+    display: inline-block;
+    padding: .25em .25em 0;
+    border-radius: 4px 4px 0 0;
+    text-decoration: none;
+    height: 1.75em;
+    font-weight: bold;
+    background: rgba( 255, 255, 255, .5 );
+    border-width: 1px 1px 0 1px;
+    border-style: solid;
+    &:hover{
+      span{
+        display: block;
+      }
+    }
+  }
+  span{
+    display: none;
+    position: absolute;
+    bottom: 105%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    text-align: center;
+  }
+  svg {
+    height: 1.5em;
+    width: 1.5em;
+    fill: currentColor;
+  }
+  .search {
+    margin-left: 50px;
+    @include connect-link( #333 );
+  }
+  .connect-rss{
+    @include connect-link( $rss );
+  }
+  .connect-tumblr{
+    @include connect-link( $tumblr );
+  }
+  .connect-facebook{
+    @include connect-link( $facebook );
+  }
+  .connect-newsletter{
+    @include connect-link( $newsletter );
+  }
+  .connect-pinterest{
+    @include connect-link( $pinterest );
+  }
+}
+
+.search-form {
+  position: relative;
+  height: 0;
+  transition: .4s linear height;
+  @extend %red-nav;
+  .search-open & {
+    height: 40px;
+  }
+  form {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    color: white;
+    input {
+      border: solid $blue;
+      border-width: 1px 0 1px 1px;
+      border-radius: 4px 0 0 4px;
+      line-height: 1.4;
+      height: 24px;
+    }
+    button {
+      border: solid $blue;
+      border-width: 1px 1px 1px 0;
+      border-radius: 0 4px 4px 0;
+      background: mix( white, $blue, 50% );
+      color: black;
+      line-height: 1.4;
+      height: 28px;
+      cursor: pointer;
+      &:hover {
+        color: white;
+        text-shadow: 0 0 4px black;
+      }
+    }
+  }
+}
+
+.nav-footer {
+  text-align: right;
+  a {
+    color: white;
+    @include gradient-underline( white, true );
+  }
+}

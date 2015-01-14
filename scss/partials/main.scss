@@ -1,0 +1,19 @@
+.main{
+  padding-top: 20px;
+  min-height: 900px;
+  .content{
+    width: 880px;
+    margin: 0 auto;
+    background: rgba( 255, 255, 255, .8 );
+    padding: 20px;
+    .content-area {
+        width: 70%;
+        float: left;
+    }
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+  }
+}
