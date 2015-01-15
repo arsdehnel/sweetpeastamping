@@ -324,7 +324,7 @@ body {
   display: block;
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 20px;
 }
 .nav-main .nav-item ul a:hover {
   background: rgba(255, 255, 255, 0.2);

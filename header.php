@@ -82,24 +82,10 @@
   </nav>
   <?php
     $cur_id = get_the_id();
-    // echo 'test';
+    $menu_locations = get_nav_menu_locations();
+    $hero_menu = $menu_locations[ 'primary' ];
+    $items = wp_get_nav_menu_items( $hero_menu );
 
-$slt_menu_locations = get_nav_menu_locations();
-$slt_hero_menu = $slt_menu_locations[ 'primary' ];
-$items = wp_get_nav_menu_items( $slt_hero_menu );
-
-  // print_r( $slt_hero_menu );
-
-    // $menu_name = 'main';
-    // $locations = get_nav_menu_locations($menu_name);
-    // print_r( $locations );
-    // wp_nav_menu();
-    // $menu_obj = wp_get_nav_menu_object( $menu_name );
-    // $items = wp_get_nav_menu_items($menu_obj->term_id);
-    // print_r( $items2 );
-    // echo 'test2';
-    // $items = wp_get_nav_menu_items( 'main' );
-    // print_r( $items );
     if( is_array( $items ) && count( $items ) ):
       echo '<nav class="nav-main">';
       foreach( $items as $item ):
