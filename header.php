@@ -84,6 +84,8 @@
     $cur_id = get_the_id();
     // echo 'test';
     $menu_name = 'main';
+    $locations = get_nav_menu_locations($menu_name);
+    print_r( $locations );
     $menu_obj = wp_get_nav_menu_object( $menu_name );
     $items = wp_get_nav_menu_items($menu_obj->term_id);
     // print_r( $items2 );
