@@ -18,6 +18,7 @@
         margin: 0 0 .5em;
         color: $blue;
         font-size: 2em;
+        font-family: $title-font;
         a {
             color: $red;
             @include gradient-underline( $red, true );

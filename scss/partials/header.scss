@@ -7,7 +7,11 @@
   border-width: 0 8px 8px 8px;
   box-shadow: 0 4px 16px rgba( 0, 0, 0, .5 );
   h1 {
-    background: transparent url(img/logo-large.png) no-repeat 50% 50%;
+    background: transparent url(img/logo-large.png) no-repeat 10px 50%;
+    margin: 0;
+    padding: 15px 0 0 15px;
+    height: 150px;
+    text-indent: -9999px;
   }
   h2 {
     position: absolute;

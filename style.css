@@ -8,16 +8,12 @@ Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
-@import url(http://fonts.googleapis.com/css?family=Calligraffitti);
-@import url(http://fonts.googleapis.com/css?family=Bell+MT);
-@import url(http://fonts.googleapis.com/css?family=Footlight+MT+Light);
-@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
-@import url(http://fonts.googleapis.com/css?family=Georgia);
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+French+Canon:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Covered+By+Your+Grace);
 body {
   margin: 0;
   padding: 0;
-  font-family: "EB Garamond";
+  font-family: "IM Fell French Canon";
   background: #987c4a;
 }
 
@@ -31,7 +27,11 @@ body {
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
 .site-header h1 {
-  background: transparent url(img/logo-large.png) no-repeat 50% 50%;
+  background: transparent url(img/logo-large.png) no-repeat 10px 50%;
+  margin: 0;
+  padding: 15px 0 0 15px;
+  height: 150px;
+  text-indent: -9999px;
 }
 .site-header h2 {
   position: absolute;
@@ -41,7 +41,7 @@ body {
   line-height: 20px;
   padding-bottom: 1px;
   font-size: 36px;
-  font-family: "Calligraffitti";
+  font-family: "Covered By Your Grace";
   color: #e2544a;
 }
 .site-header h2 span.on {
@@ -132,7 +132,7 @@ body {
 .single-post .page-title {
   margin: 0 0 .5em;
   color: #4fb7cb;
-  font-family: "EB Garamond";
+  font-family: "Covered By Your Grace";
   font-weight: normal;
   font-size: 2em;
   text-decoration: none;
@@ -154,6 +154,7 @@ body {
   margin: 0 0 .5em;
   color: #23a5bf;
   font-size: 2em;
+  font-family: "Covered By Your Grace";
 }
 .archive .entry-title a,
 .home .entry-title a,
@@ -262,8 +263,9 @@ body {
   margin: 0 .2em;
   color: #666;
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.6em;
   font-weight: bold;
+  font-family: "Covered By Your Grace";
 }
 .nav-main .nav-item .text,
 .nav-main .nav-item svg {
