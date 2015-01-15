@@ -2,8 +2,8 @@
 
     // This theme uses wp_nav_menu() in two locations.
     register_nav_menus( array(
-        'primary'   => __( 'Primary menu', 'sweetpea2014' ),
-        'connect' => __( 'Social media connection options', 'sweetpea2014' ),
+        'main'   => __( 'Primary menu', 'sweetpea2014' ),
+        // 'connect' => __( 'Social media connection options', 'sweetpea2014' ),
     ) );
 
 function sweetpea2014_get_featured_posts() {
