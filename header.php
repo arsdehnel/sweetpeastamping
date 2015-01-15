@@ -82,9 +82,13 @@
   </nav>
   <?php
     $cur_id = get_the_id();
-    echo 'test';
-    $items = wp_get_nav_menu_items( 'main' );
-    print_r( $items );
+    // echo 'test';
+    $menu_obj = wp_get_nav_menu_object( 'main' );
+    $items = wp_get_nav_menu_items($menu_obj->term_id);
+    // print_r( $items2 );
+    // echo 'test2';
+    // $items = wp_get_nav_menu_items( 'main' );
+    // print_r( $items );
     if( is_array( $items ) && count( $items ) ):
       echo '<nav class="nav-main">';
       foreach( $items as $item ):
