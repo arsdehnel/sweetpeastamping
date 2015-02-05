@@ -20,7 +20,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
     <![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <script src="/path/to/svg4everybody.ie8.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/lib/svg4everybody.ie8.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -46,13 +46,13 @@
                           ),
                          array(
                             'class' => 'connect-sucatalog',
-                            'img' => '/img/su-catalog.png',
+                            'img' => '/img/su-logo.png',
                             'display_text' => 'Catalog',
                             'label' => 'catalog',
                             'url' => 'http://www.stampinup.com/home/en-US/catalogs'
                           ),
                          array(
-                            'class' => 'connect-stampinup',
+                            'class' => 'connect-sukelly',
                             'img' => '/img/su-logo.png',
                             'display_text' => 'Site',
                             'label' => 'stampinup',
@@ -115,7 +115,7 @@
         <svg viewbox="0 0 1024 1024">
           <use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/core-defs.svg#icon-search"></use>
         </svg>
-        <span>Search</span>
+        <span class="hover-label">Search</span>
       </a>
   </nav>
   <nav class="search-form">

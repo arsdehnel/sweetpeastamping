@@ -181,7 +181,9 @@
   .connect-instagram {
     @include connect-link( $instagram );
   }
-  .connect-stampinup {
+  .connect-stampinup,
+  .connect-sucatalog,
+  .connect-sukelly {
     height: 2.5em;
     @include connect-link( $stampinup );
     .display-text {
@@ -191,7 +193,6 @@
     img {
       display: inline-block;
       height: 2em;
-      position: relative;
     }
   }
 }

@@ -478,29 +478,38 @@ body {
 .nav-connect .connect-instagram .hover-label {
   color: #9d7043;
 }
-.nav-connect .connect-stampinup {
+.nav-connect .connect-stampinup,
+.nav-connect .connect-sucatalog,
+.nav-connect .connect-sukelly {
   height: 2.5em;
   color: #6796a6;
   border-color: white;
   -webkit-transition: all .1s linear;
           transition: all .1s linear;
 }
-.nav-connect .connect-stampinup:hover {
+.nav-connect .connect-stampinup:hover,
+.nav-connect .connect-sucatalog:hover,
+.nav-connect .connect-sukelly:hover {
   color: white;
   background: #b3cad2;
   border-color: #6796a6;
 }
-.nav-connect .connect-stampinup .hover-label {
+.nav-connect .connect-stampinup .hover-label,
+.nav-connect .connect-sucatalog .hover-label,
+.nav-connect .connect-sukelly .hover-label {
   color: #6796a6;
 }
-.nav-connect .connect-stampinup .display-text {
+.nav-connect .connect-stampinup .display-text,
+.nav-connect .connect-sucatalog .display-text,
+.nav-connect .connect-sukelly .display-text {
   display: inline-block;
   font-size: 2em;
 }
-.nav-connect .connect-stampinup img {
+.nav-connect .connect-stampinup img,
+.nav-connect .connect-sucatalog img,
+.nav-connect .connect-sukelly img {
   display: inline-block;
   height: 2em;
-  position: relative;
 }
 
 .search-form {
