@@ -141,7 +141,7 @@
       }
     }
   }
-  span{
+  .hover-label{
     display: none;
     position: absolute;
     bottom: 105%;
@@ -150,7 +150,11 @@
     margin-left: -100px;
     text-align: center;
   }
-  svg {
+  .display-text {
+    font-family: $nav-font;
+  }
+  svg,
+  .no-svg {
     height: 1.5em;
     width: 1.5em;
     fill: currentColor;
@@ -176,6 +180,19 @@
   }
   .connect-instagram {
     @include connect-link( $instagram );
+  }
+  .connect-stampinup {
+    height: 2.5em;
+    @include connect-link( $stampinup );
+    .display-text {
+      display: inline-block;
+      font-size: 2em;
+    }
+    img {
+      display: inline-block;
+      height: 2em;
+      position: relative;
+    }
   }
 }
 

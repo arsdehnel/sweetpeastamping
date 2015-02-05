@@ -38,6 +38,27 @@
                          //    'url' => '#'
                          //  ),
                          array(
+                            'class' => 'connect-stampinup',
+                            'img' => '/img/su-logo.png',
+                            'display_text' => 'Site',
+                            'label' => 'stampinup',
+                            'url' => 'http://www.pinterest.com/chlojono/'
+                          ),
+                         array(
+                            'class' => 'connect-sucatalog',
+                            'img' => '/img/su-catalog.png',
+                            'display_text' => 'Catalog',
+                            'label' => 'catalog',
+                            'url' => 'http://www.stampinup.com/home/en-US/catalogs'
+                          ),
+                         array(
+                            'class' => 'connect-stampinup',
+                            'img' => '/img/su-logo.png',
+                            'display_text' => 'Site',
+                            'label' => 'stampinup',
+                            'url' => 'http://www.pinterest.com/chlojono/'
+                          ),
+                         array(
                             'class' => 'connect-tumblr',
                             'svg' => 'icon-tumblr',
                             'label' => 'tumblr',
@@ -75,10 +96,17 @@
         foreach( $nav_connect as $nav ):
           ?>
           <a href="#" class="<?php echo $nav['class']; ?>">
-            <svg viewbox="0 0 32 32">
-              <use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/core-defs.svg#<?php echo $nav['svg']; ?>"></use>
-            </svg>
-            <span><?php echo $nav['label']; ?></span>
+            <?php if( array_key_exists('svg', $nav) ): ?>
+              <svg viewbox="0 0 32 32">
+                <use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/core-defs.svg#<?php echo $nav['svg']; ?>"></use>
+              </svg>
+            <?php else: ?>
+              <img src="<?php echo get_template_directory_uri().$nav['img']; ?>" alt="<?php echo $nav['label']; ?>">
+            <?php endif; ?>
+            <?php if( array_key_exists('display_text', $nav) ): ?>
+              <span class="display-text"><?php echo $nav['display_text']; ?></span>
+            <?php endif; ?>
+            <span class="hover-label"><?php echo $nav['label']; ?></span>
           </a>
           <?php
         endforeach;

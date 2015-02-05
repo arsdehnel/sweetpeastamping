@@ -361,7 +361,7 @@ body {
 .nav-connect a:hover span {
   display: block;
 }
-.nav-connect span {
+.nav-connect .hover-label {
   display: none;
   position: absolute;
   bottom: 105%;
@@ -370,7 +370,11 @@ body {
   margin-left: -100px;
   text-align: center;
 }
-.nav-connect svg {
+.nav-connect .display-text {
+  font-family: "Covered By Your Grace";
+}
+.nav-connect svg,
+.nav-connect .no-svg {
   height: 1.5em;
   width: 1.5em;
   fill: currentColor;
@@ -387,7 +391,7 @@ body {
   background: #999999;
   border-color: #333;
 }
-.nav-connect .search span {
+.nav-connect .search .hover-label {
   color: #333;
 }
 .nav-connect .connect-rss {
@@ -401,7 +405,7 @@ body {
   background: #ffb27f;
   border-color: #FF6600;
 }
-.nav-connect .connect-rss span {
+.nav-connect .connect-rss .hover-label {
   color: #FF6600;
 }
 .nav-connect .connect-tumblr {
@@ -415,7 +419,7 @@ body {
   background: #96a2b0;
   border-color: #2d4661;
 }
-.nav-connect .connect-tumblr span {
+.nav-connect .connect-tumblr .hover-label {
   color: #2d4661;
 }
 .nav-connect .connect-facebook {
@@ -429,7 +433,7 @@ body {
   background: #9daccb;
   border-color: #3b5998;
 }
-.nav-connect .connect-facebook span {
+.nav-connect .connect-facebook .hover-label {
   color: #3b5998;
 }
 .nav-connect .connect-newsletter {
@@ -443,7 +447,7 @@ body {
   background: #7fbf7f;
   border-color: green;
 }
-.nav-connect .connect-newsletter span {
+.nav-connect .connect-newsletter .hover-label {
   color: green;
 }
 .nav-connect .connect-pinterest {
@@ -457,7 +461,7 @@ body {
   background: #e49093;
   border-color: #C92228;
 }
-.nav-connect .connect-pinterest span {
+.nav-connect .connect-pinterest .hover-label {
   color: #C92228;
 }
 .nav-connect .connect-instagram {
@@ -471,8 +475,32 @@ body {
   background: #ceb7a1;
   border-color: #9d7043;
 }
-.nav-connect .connect-instagram span {
+.nav-connect .connect-instagram .hover-label {
   color: #9d7043;
+}
+.nav-connect .connect-stampinup {
+  height: 2.5em;
+  color: #6796a6;
+  border-color: white;
+  -webkit-transition: all .1s linear;
+          transition: all .1s linear;
+}
+.nav-connect .connect-stampinup:hover {
+  color: white;
+  background: #b3cad2;
+  border-color: #6796a6;
+}
+.nav-connect .connect-stampinup .hover-label {
+  color: #6796a6;
+}
+.nav-connect .connect-stampinup .display-text {
+  display: inline-block;
+  font-size: 2em;
+}
+.nav-connect .connect-stampinup img {
+  display: inline-block;
+  height: 2em;
+  position: relative;
 }
 
 .search-form {
