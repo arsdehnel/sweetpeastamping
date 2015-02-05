@@ -460,6 +460,20 @@ body {
 .nav-connect .connect-pinterest span {
   color: #C92228;
 }
+.nav-connect .connect-instagram {
+  color: #9d7043;
+  border-color: white;
+  -webkit-transition: all .1s linear;
+          transition: all .1s linear;
+}
+.nav-connect .connect-instagram:hover {
+  color: white;
+  background: #ceb7a1;
+  border-color: #9d7043;
+}
+.nav-connect .connect-instagram span {
+  color: #9d7043;
+}
 
 .search-form {
   position: relative;

@@ -4,6 +4,7 @@
     </nav>
 </footer>
 <script src="<?php echo get_template_directory_uri(); ?>/js/lib/jquery.lettering.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/lib/svg4everybody.min.js"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/dev/main.js"></script>
 </body>
 </html>
