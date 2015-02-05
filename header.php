@@ -19,6 +19,8 @@
     <!--[if lt IE 9]>
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
     <![endif]-->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <script src="/path/to/svg4everybody.ie8.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -29,30 +31,41 @@
   <?php
 
     $nav_connect = array(
-                         array(
-                            'class' => 'connect-rss',
-                            'svg' => 'icon-feed',
-                            'label' => 'rss'
-                          ),
+                         // array(
+                         //    'class' => 'connect-rss',
+                         //    'svg' => 'icon-feed',
+                         //    'label' => 'rss',
+                         //    'url' => '#'
+                         //  ),
                          array(
                             'class' => 'connect-tumblr',
                             'svg' => 'icon-tumblr',
-                            'label' => 'tumblr'
+                            'label' => 'tumblr',
+                            'url' => 'https://www.tumblr.com/blog/sweetpeastamping'
                           ),
                          array(
                             'class' => 'connect-facebook',
                             'svg' => 'icon-facebook',
-                            'label' => 'facebook'
+                            'label' => 'facebook',
+                            'url' => 'https://www.facebook.com/kelly.emerson.315'
                           ),
+                         // array(
+                         //    'class' => 'connect-newsletter',
+                         //    'svg' => 'icon-mail',
+                         //    'label' => 'newsletter',
+                         //    'url' => '#'
+                         //  ),
                          array(
-                            'class' => 'connect-newsletter',
-                            'svg' => 'icon-mail',
-                            'label' => 'newsletter'
+                            'class' => 'connect-instagram',
+                            'svg' => 'icon-instagram',
+                            'label' => 'instagram',
+                            'url' => 'http://instagram.com/stampinkelly'
                           ),
                          array(
                             'class' => 'connect-pinterest',
                             'svg' => 'icon-pinterest',
-                            'label' => 'pinterest'
+                            'label' => 'pinterest',
+                            'url' => 'http://www.pinterest.com/chlojono/'
                           )
                         );
 
