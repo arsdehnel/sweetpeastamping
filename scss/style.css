@@ -337,13 +337,14 @@ body {
   position: absolute;
   right: 20px;
   bottom: 114px;
+  height: 33px;
   text-align: right;
   transition: .4s linear bottom;
 }
 .search-open .nav-connect {
   bottom: 154px;
 }
-.nav-connect a {
+.nav-connect .tab {
   position: relative;
   display: inline-block;
   padding: .25em .25em 0;
@@ -355,7 +356,7 @@ body {
   border-width: 1px 1px 0 1px;
   border-style: solid;
 }
-.nav-connect a:hover span {
+.nav-connect .tab:hover .hover-label {
   display: block;
 }
 .nav-connect .hover-label {
@@ -377,7 +378,7 @@ body {
   fill: currentColor;
 }
 .nav-connect .search {
-  margin-left: 50px;
+  margin-left: 25px;
   color: #333;
   border-color: white;
   transition: all .1s linear;
@@ -468,35 +469,63 @@ body {
 .nav-connect .connect-instagram .hover-label {
   color: #9d7043;
 }
-.nav-connect .connect-stampinup,
-.nav-connect .connect-sucatalog,
-.nav-connect .connect-sukelly {
-  height: 2.5em;
+.nav-connect .connect-stampinup {
+  position: relative;
+  bottom: 5px;
+  padding-left: 70px;
+  margin-right: 25px;
+  background: rgba(255, 255, 255, 0.5) url(/wp-content/themes/sweetpea2014/img/su-logo.png) 4px 50% no-repeat;
+  background-size: 50px;
   color: #6796a6;
   border-color: white;
   transition: all .1s linear;
 }
-.nav-connect .connect-stampinup:hover,
-.nav-connect .connect-sucatalog:hover,
-.nav-connect .connect-sukelly:hover {
+.nav-connect .connect-stampinup:hover {
   color: white;
   background: #b3cad2;
   border-color: #6796a6;
 }
-.nav-connect .connect-stampinup .hover-label,
-.nav-connect .connect-sucatalog .hover-label,
-.nav-connect .connect-sukelly .hover-label {
+.nav-connect .connect-stampinup .hover-label {
   color: #6796a6;
 }
-.nav-connect .connect-stampinup .display-text,
-.nav-connect .connect-sucatalog .display-text,
-.nav-connect .connect-sukelly .display-text {
+.nav-connect .connect-stampinup .display-text {
   display: inline-block;
-  font-size: 2em;
+  font-size: 1.3em;
+  line-height: 1.3em;
 }
-.nav-connect .connect-stampinup img,
-.nav-connect .connect-sucatalog img,
-.nav-connect .connect-sukelly img {
+.nav-connect .connect-stampinup:hover {
+  background: #527884 url(/wp-content/themes/sweetpea2014/img/su-logo.png) 4px 50% no-repeat;
+  background-size: 50px;
+}
+.nav-connect .connect-stampinup:hover a {
+  color: #85abb7;
+}
+.nav-connect .connect-stampinup:hover a:hover {
+  color: white;
+}
+.nav-connect .connect-stampinup a {
+  display: inline-block;
+  position: relative;
+  margin-right: 5px;
+  padding-right: 10px;
+  color: #5c8795;
+}
+.nav-connect .connect-stampinup a::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 1px;
+  bottom: 5px;
+  background: #999;
+  width: 1px;
+}
+.nav-connect .connect-stampinup a:last-child {
+  margin-right: 0;
+}
+.nav-connect .connect-stampinup a:last-child::after {
+  display: none;
+}
+.nav-connect .connect-stampinup img {
   display: inline-block;
   height: 2em;
 }

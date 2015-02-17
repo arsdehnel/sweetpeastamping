@@ -37,27 +37,27 @@
                          //    'label' => 'rss',
                          //    'url' => '#'
                          //  ),
-                         array(
-                            'class' => 'connect-stampinup',
-                            'img' => '/img/su-logo.png',
-                            'display_text' => 'Site',
-                            'label' => 'stampinup',
-                            'url' => 'http://www.pinterest.com/chlojono/'
-                          ),
-                         array(
-                            'class' => 'connect-sucatalog',
-                            'img' => '/img/su-logo.png',
-                            'display_text' => 'Catalog',
-                            'label' => 'catalog',
-                            'url' => 'http://www.stampinup.com/home/en-US/catalogs'
-                          ),
-                         array(
-                            'class' => 'connect-sukelly',
-                            'img' => '/img/su-logo.png',
-                            'display_text' => 'Site',
-                            'label' => 'stampinup',
-                            'url' => 'http://www.pinterest.com/chlojono/'
-                          ),
+                         // array(
+                         //    'class' => 'connect-stampinup',
+                         //    'img' => '/img/su-logo.png',
+                         //    'display_text' => 'Site',
+                         //    'label' => 'stampinup',
+                         //    'url' => 'http://www.pinterest.com/chlojono/'
+                         //  ),
+                         // array(
+                         //    'class' => 'connect-sucatalog',
+                         //    'img' => '/img/su-logo.png',
+                         //    'display_text' => 'Catalog',
+                         //    'label' => 'catalog',
+                         //    'url' => 'http://www.stampinup.com/home/en-US/catalogs'
+                         //  ),
+                         // array(
+                         //    'class' => 'connect-sukelly',
+                         //    'img' => '/img/su-logo.png',
+                         //    'display_text' => 'Site',
+                         //    'label' => 'stampinup',
+                         //    'url' => 'http://www.pinterest.com/chlojono/'
+                         //  ),
                          array(
                             'class' => 'connect-tumblr',
                             'svg' => 'icon-tumblr',
@@ -92,10 +92,20 @@
 
   ?>
   <nav class="nav-connect">
-      <?php
+    <span class="tab connect-stampinup">
+      <a href="http://www.pinterest.com/chlojono/">
+        <span class="display-text">Site</span>
+      </a>
+      <a href="http://www.stampinup.com/home/en-US/catalogs">
+        <span class="display-text">Catalog</span>
+      </a>
+      <a href="http://kellystamper.stampinup.net">
+        <span class="display-text">My Site</span>
+      </a>
+    </span><?php
         foreach( $nav_connect as $nav ):
           ?>
-          <a href="#" class="<?php echo $nav['class']; ?>">
+          <a href="#" class="tab <?php echo $nav['class']; ?>">
             <?php if( array_key_exists('svg', $nav) ): ?>
               <svg viewbox="0 0 32 32">
                 <use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/core-defs.svg#<?php echo $nav['svg']; ?>"></use>
@@ -110,8 +120,7 @@
           </a>
           <?php
         endforeach;
-      ?>
-      <a href="#" class="search">
+      ?><a href="#" class="search tab">
         <svg viewbox="0 0 1024 1024">
           <use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/core-defs.svg#icon-search"></use>
         </svg>

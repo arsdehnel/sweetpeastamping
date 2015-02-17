@@ -119,12 +119,13 @@
   position: absolute;
   right: 20px;
   bottom: 114px;
+  height: 33px;
   text-align: right;
   transition: .4s linear bottom;
   .search-open & {
     bottom: 154px;
   }
-  a{
+  .tab{
     position: relative;
     display: inline-block;
     padding: .25em .25em 0;
@@ -135,8 +136,8 @@
     background: rgba( 255, 255, 255, .5 );
     border-width: 1px 1px 0 1px;
     border-style: solid;
-    &:hover{
-      span{
+    &:hover {
+      .hover-label {
         display: block;
       }
     }
@@ -160,7 +161,7 @@
     fill: currentColor;
   }
   .search {
-    margin-left: 50px;
+    margin-left: 25px;
     @include connect-link( #333 );
   }
   .connect-rss{
@@ -181,14 +182,50 @@
   .connect-instagram {
     @include connect-link( $instagram );
   }
-  .connect-stampinup,
-  .connect-sucatalog,
-  .connect-sukelly {
-    height: 2.5em;
+  .connect-stampinup {
+    position: relative;
+    bottom: 5px;
+    padding-left: 70px;
+    margin-right: 25px;
+    background: rgba( 255, 255, 255, .5 ) url(/wp-content/themes/sweetpea2014/img/su-logo.png) 4px 50% no-repeat;
+    background-size: 50px;
     @include connect-link( $stampinup );
     .display-text {
       display: inline-block;
-      font-size: 2em;
+      font-size: 1.3em;
+      line-height: 1.3em;
+    }
+    &:hover {
+      background: mix( black, $stampinup, 20% ) url(/wp-content/themes/sweetpea2014/img/su-logo.png) 4px 50% no-repeat;
+      background-size: 50px;
+      a {
+        color: mix( white, $stampinup, 20% );
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    a {
+      display: inline-block;
+      position: relative;
+      margin-right: 5px;
+      padding-right: 10px;
+      color: mix( black, $stampinup, 10% );
+      &::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 1px;
+        bottom: 5px;
+        background: #999;
+        width: 1px;
+      }
+      &:last-child {
+        margin-right: 0;
+        &::after {
+          display: none;
+        }
+      }
     }
     img {
       display: inline-block;

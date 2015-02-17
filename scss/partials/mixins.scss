@@ -2,12 +2,12 @@
   color: $primary-color;
   border-color: white;
   transition: all .1s linear;
-  &:hover{
+  &:hover {
     color: white;
     background: mix( white, $primary-color, 50% );
     border-color: $primary-color;
   }
-  .hover-label{
+  .hover-label {
     color: $primary-color;
   }
 }
