@@ -20,7 +20,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
     <![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <script src="<?php echo get_template_directory_uri(); ?>/js/lib/svg4everybody.ie8.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/lib/svgforeverybody.min.js"></script>
     <?php wp_head(); ?>
 </head>
 
@@ -93,7 +93,7 @@
   ?>
   <nav class="nav-connect">
     <span class="tab connect-stampinup">
-      <a href="http://www.pinterest.com/chlojono/">
+      <a href="http://www.stampinup.com/">
         <span class="display-text">Site</span>
       </a>
       <a href="http://www.stampinup.com/home/en-US/catalogs">
