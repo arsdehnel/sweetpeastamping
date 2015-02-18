@@ -21,6 +21,7 @@
     <![endif]-->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <script src="<?php echo get_template_directory_uri(); ?>/js/lib/svgforeverybody.min.js"></script>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
     <?php wp_head(); ?>
 </head>
 
