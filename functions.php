@@ -5,9 +5,19 @@
 //     // 'connect' => __( 'Social media connection options', 'sweetpea2014' ),
 // ) );
 
+add_action( 'wp_enqueue_scripts'   , 'aslaninst2014_enqueue_scripts' );
+
 include_once( 'includes/client-side-color-picker.php' );
 
 register_nav_menus( array( 'main' ) );
+
+function sweetpea2014_enqueue_scripts(){
+    wp_enqueue_style( 'sweetpea2014-style', get_stylesheet_uri(), array() );
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'jquery-lettering', get_template_directory_uri() . '/js/lib/jquery.lettering.js' );
+    // wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/select2.min.js', null, null, true );
+}
+
 
 function sweetpea2014_get_featured_posts() {
     /**
