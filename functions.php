@@ -5,6 +5,8 @@
 //     // 'connect' => __( 'Social media connection options', 'sweetpea2014' ),
 // ) );
 
+include_once( 'includes/client-side-color-picker.php' );
+
 register_nav_menus( array( 'main' ) );
 
 function sweetpea2014_get_featured_posts() {

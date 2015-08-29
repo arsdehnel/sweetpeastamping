@@ -17,5 +17,4 @@ $(function(){
 	$('body').on('change','.element-selector :input',function(){
 	  setColor( $(this) );
 	});
-
 });
