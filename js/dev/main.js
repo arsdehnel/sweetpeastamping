@@ -25,7 +25,7 @@ $(function(){
             'top' : '-42%',
             'left' : '-10%'
         }
-    ]
+    ];
 
     for( var i = 0; i < starLocations.length; i++ ){
         var $star = $('<div class="star" />');
@@ -33,7 +33,7 @@ $(function(){
         $star.appendTo('body');
     }
 
-    $("header h2").lettering();
+    // $("header h2").lettering();
 
     var curChar = 0;
 
@@ -55,7 +55,7 @@ $(function(){
 
     $('body').on('click','.nav-connect .search',function(){
         $('body').toggleClass('search-open');
-    })
+    });
 
 });
 // var latestKnownScrollY = 0;
