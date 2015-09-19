@@ -14,11 +14,11 @@
     }
     &:before{
         left: 0;
-        border-color: transparent mix( black, $red, 40% ) mix( black, $red, 40% ) transparent;
+        border-color: transparent mix( black, $nav-bg, 40% ) mix( black, $nav-bg, 40% ) transparent;
     }
     &:after{
         right: 0;
-        border-color: transparent transparent mix( black, $red, 40% ) mix( black, $red, 40% );
+        border-color: transparent transparent mix( black, $nav-bg, 40% ) mix( black, $nav-bg, 40% );
     }
 }
 

@@ -238,11 +238,11 @@ body {
 }
 .nav-main:before, .search-form:before {
   left: 0;
-  border-color: transparent #87322c #87322c transparent;
+  border-color: transparent #6a6344 #6a6344 transparent;
 }
 .nav-main:after, .search-form:after {
   right: 0;
-  border-color: transparent transparent #87322c #87322c;
+  border-color: transparent transparent #6a6344 #6a6344;
 }
 
 .nav-main {
