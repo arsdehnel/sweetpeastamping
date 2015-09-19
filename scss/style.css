@@ -151,7 +151,7 @@ body {
 .page .entry-title,
 .single-post .entry-title {
   margin: 0 0 .5em;
-  color: #23a5bf;
+  color: #82be38;
   font-size: 2em;
   font-family: "Covered By Your Grace";
 }
@@ -159,7 +159,7 @@ body {
 .home .entry-title a,
 .page .entry-title a,
 .single-post .entry-title a {
-  color: #e2544a;
+  color: #82be38;
   text-decoration: none;
   background: linear-gradient(to bottom, transparent 95%, rgba(226, 84, 74, 0.6) 95%);
   background-position: 0 0;
@@ -259,7 +259,7 @@ body {
   line-height: 80px;
   height: 80px;
   margin: 0 .2em;
-  color: #666;
+  color: black;
   text-decoration: none;
   font-size: 1.6em;
   font-weight: bold;
@@ -279,13 +279,13 @@ body {
   z-index: 5;
 }
 .nav-main .nav-item svg .shape-outer {
-  stroke: peachpuff;
+  stroke: white;
   stroke-width: 2;
   fill: none;
 }
 .nav-main .nav-item svg .shape-inner {
   stroke-width: 0;
-  fill: peachpuff;
+  fill: white;
 }
 .nav-main .nav-item:hover {
   color: white;

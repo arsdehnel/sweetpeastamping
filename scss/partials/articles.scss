@@ -16,11 +16,11 @@
     }
     .entry-title {
         margin: 0 0 .5em;
-        color: $blue;
+        color: $green;
         font-size: 2em;
         font-family: $title-font;
         a {
-            color: $red;
+            color: $green;
             @include gradient-underline( $red, true );
         }
     }
