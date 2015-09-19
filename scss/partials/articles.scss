@@ -21,7 +21,7 @@
         font-family: $title-font;
         a {
             color: $green;
-            @include gradient-underline( $red, true );
+            @include gradient-underline( $green, true );
         }
     }
     .entry-meta {
