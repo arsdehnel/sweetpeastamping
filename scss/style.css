@@ -14,15 +14,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: "IM Fell French Canon";
-  background: #987c4a;
+  background: #e0d5c1;
 }
 
 .site-header {
   margin: 0 auto;
   width: 960px;
   position: relative;
-  background: rgba(130, 190, 56, 0.7);
-  border: solid #23a5bf;
+  background: #a8d26f;
+  border: solid white;
   border-width: 0 8px 8px 8px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
 }
@@ -223,7 +223,7 @@ body {
 .nav-main, .search-form {
   position: relative;
   width: 1000px;
-  background: #e2544a;
+  background: #b1a572;
   left: -20px;
   display: block;
 }
