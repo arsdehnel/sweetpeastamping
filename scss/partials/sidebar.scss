@@ -18,13 +18,12 @@
     }
     h2 {
         margin: 0 0 .5em;
-        color: $blue;
+        color: black;
     }
     a {
-        color: $red;
+        color: $sidebar-headers;
         text-decoration: none;
-        background: linear-gradient(to bottom, rgba(0,0,0,0) 95%, rgba($red,0.6) 95%);
-        background-position: 0 0;
+        @include gradient-underline( $sidebar-headers, false );
         &:hover {
             background: none;
         }

@@ -1,23 +1,23 @@
 @mixin connect-link( $primary-color ){
-  color: $primary-color;
-  border-color: white;
-  transition: all .1s linear;
-  &:hover {
-    color: white;
-    background: mix( white, $primary-color, 50% );
-    border-color: $primary-color;
-  }
-  .hover-label {
     color: $primary-color;
-  }
+    border-color: white;
+    transition: all .1s linear;
+    &:hover {
+        color: white;
+        background: mix( white, $primary-color, 50% );
+        border-color: $primary-color;
+    }
+    .hover-label {
+        color: $primary-color;
+    }
 }
 @mixin gradient-underline( $primary-color, $hover ){
-  text-decoration: none;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 95%, rgba($primary-color,0.6) 95%);
-  background-position: 0 0;
-  @if( $hover ){
-    &:hover {
-      background: none;
+    text-decoration: none;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 95%, rgba($primary-color,0.6) 95%);
+    background-position: 0 0;
+    @if( $hover ){
+        &:hover {
+            background: none;
+        }
     }
-  }
 }

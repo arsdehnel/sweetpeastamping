@@ -1,26 +1,26 @@
 .main{
-  padding-top: 240px;
-  .admin-bar & {
-    padding-top: 270px;
-  }
-  min-height: 900px;
-  .content{
-    width: 880px;
-    margin: 0 auto;
-    background: rgba( 255, 255, 255, .8 );
-    padding: 20px;
-    .content-area {
-        width: 70%;
-        float: left;
+    padding-top: 240px;
+    .admin-bar & {
+        padding-top: 270px;
     }
-    .sidebar {
-        width: 30%;
-        float: left;
+    min-height: 900px;
+    .content{
+        width: 880px;
+        margin: 0 auto;
+        background: rgba( 255, 255, 255, .8 );
+        padding: 20px;
+        .content-area {
+                width: 70%;
+                float: left;
+        }
+        .sidebar {
+                width: 30%;
+                float: left;
+        }
+        &::after {
+                content: '';
+                display: table;
+                clear: both;
+        }
     }
-    &::after {
-        content: '';
-        display: table;
-        clear: both;
-    }
-  }
 }
