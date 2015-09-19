@@ -5,9 +5,9 @@
 //     // 'connect' => __( 'Social media connection options', 'sweetpea2014' ),
 // ) );
 
-add_action( 'wp_enqueue_scripts'   , 'aslaninst2014_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts'   , 'sweetpea2014_enqueue_scripts' );
 
-include_once( 'includes/client-side-color-picker.php' );
+// include_once( 'includes/client-side-color-picker.php' );
 
 register_nav_menus( array( 'main' ) );
 
