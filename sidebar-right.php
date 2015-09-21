@@ -21,5 +21,12 @@
                 </ul>
             </ul><?php
         endif;
+        if ( is_active_sidebar( 'main_sidebar' ) ) :
+            ?>
+            <div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
+                <?php dynamic_sidebar( 'main_sidebar' ); ?>
+            </div><!-- #primary-sidebar -->
+            <?
+        endif;
     ?>
 </div>
