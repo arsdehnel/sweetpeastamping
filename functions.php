@@ -6,6 +6,7 @@
 // ) );
 
 add_action( 'wp_enqueue_scripts'   , 'sweetpea2014_enqueue_scripts' );
+add_action( 'widgets_init'         , 'sweetpea2014_widgets_init' );
 
 // include_once( 'includes/client-side-color-picker.php' );
 
@@ -16,6 +17,24 @@ function sweetpea2014_enqueue_scripts(){
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'jquery-lettering', get_template_directory_uri() . '/js/lib/jquery.lettering.js' );
     // wp_enqueue_script( 'select2', get_template_directory_uri() . '/assets/scripts/build/select2.min.js', null, null, true );
+}
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function sweetpea2014_widgets_init() {
+
+    register_sidebar( array(
+        'name'          => 'Main sidebar',
+        'id'            => 'main_sidebar',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ) );
+
 }
 
 
