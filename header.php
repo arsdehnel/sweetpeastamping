@@ -106,7 +106,7 @@
         </span><?php
                 foreach( $nav_connect as $nav ):
                     ?>
-                    <a href="<?php echo $nav['url']; ?>" class="tab <?php echo $nav['class']; ?>">
+                    <a href="<?php echo $nav['url']; ?>" taregt="_blank" class="tab <?php echo $nav['class']; ?>">
                         <?php if( array_key_exists('svg', $nav) ): ?>
                             <svg viewbox="0 0 32 32">
                                 <use xlink:href="<?php echo get_template_directory_uri(); ?>/svg/core-defs.svg#<?php echo $nav['svg']; ?>"></use>
